@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="8" logfile="ME9K_NG4.log">
+    <strings>
+      <string name="!PAGE_NAME">Rough Running</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI1_WERT">Rough Running C1</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI2_WERT">Rough Running C2</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI3_WERT">Rough Running C3</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI4_WERT">Rough Running C4</string>
+      <string name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT">Engine Temp</string>
+      <string name="!JOB#STATUS_MOTORDREHZAHL#STAT_MOTORDREHZAHL_WERT">Engine RPM</string>
+      <string name="!JOB#STATUS_AN_LUFTTEMPERATUR#STAT_AN_LUFTTEMPERATUR_WERT">Intake Air Temperature</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI1_WERT">Cylinder Smoothness 1 _-2:+2_</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI2_WERT">Cylinder Smoothness 2 _-2:+2_</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI3_WERT">Cylinder Smoothness 3 _-2:+2_ </string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI4_WERT">Cylinder Smoothness 4 _-2:+2_</string>
+    </strings>
+    <jobs sgbd="me9k_ng4">
+      <job name="STATUS_LAUFUNRUHE">
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI1_WERT" result="STAT_LUTSFI1_WERT" format=".2R" log_tag="STAT_LUTSFI1_WERT" />
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI2_WERT" result="STAT_LUTSFI2_WERT" format=".2R" log_tag="STAT_LUTSFI2_WERT" />
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI3_WERT" result="STAT_LUTSFI3_WERT" format=".2R" log_tag="STAT_LUTSFI3_WERT" />
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI4_WERT" result="STAT_LUTSFI4_WERT" format=".2R" log_tag="STAT_LUTSFI4_WERT" />
+      </job>
+      <job name="STATUS_MOTORTEMPERATUR">
+        <display name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT" result="STAT_MOTORTEMPERATUR_WERT" format=".2R" log_tag="STAT_MOTORTEMPERATUR_WERT" />
+      </job>
+      <job name="STATUS_MOTORDREHZAHL">
+        <display name="!JOB#STATUS_MOTORDREHZAHL#STAT_MOTORDREHZAHL_WERT" result="STAT_MOTORDREHZAHL_WERT" format=".0R" log_tag="STAT_MOTORDREHZAHL_WERT" />
+      </job>
+      <job name="STATUS_AN_LUFTTEMPERATUR">
+        <display name="!JOB#STATUS_AN_LUFTTEMPERATUR#STAT_AN_LUFTTEMPERATUR_WERT" result="STAT_AN_LUFTTEMPERATUR_WERT" format=".2R" log_tag="STAT_AN_LUFTTEMPERATUR_WERT" />
+      </job>
+      <job name="STATUS_MOTORLAUFUNRUHE">
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI1_WERT" result="STAT_LUTSFI1_WERT" format=".2R" log_tag="STAT_LUTSFI1_WERT" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI2_WERT" result="STAT_LUTSFI2_WERT" format=".2R" log_tag="STAT_LUTSFI2_WERT" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI3_WERT" result="STAT_LUTSFI3_WERT" format=".2R" log_tag="STAT_LUTSFI3_WERT" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI4_WERT" result="STAT_LUTSFI4_WERT" format=".2R" log_tag="STAT_LUTSFI4_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="BZM_SZM.log">
+    <strings>
+      <string name="!PAGE_NAME">BZM/SZM centre console</string>
+      <string name="!JOB#AIF_LESEN#AIF_FG_NR">chassis</string>
+    </strings>
+    <jobs sgbd="SZM_60">
+      <job name="AIF_LESEN">
+        <display name="!JOB#AIF_LESEN#AIF_FG_NR" result="AIF_FG_NR" format="" log_tag="AIF_FG_NR" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

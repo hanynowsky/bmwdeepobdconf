@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="ASCMK20.log">
+    <strings>
+      <string name="!PAGE_NAME">ASCMK20</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_VL_WERT">wheel speed front left</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_VR_WERT">wheel speed front right</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_HL_WERT">wheel speed rear left</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_HR_WERT">wheel speed rear right</string>
+    </strings>
+    <jobs sgbd="ascmk20">
+      <job name="STATUS_IO_LESEN">
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_VL_WERT" result="STAT_RAD_GESCHW_VL_WERT" format="L" log_tag="STAT_RAD_GESCHW_VL_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_VR_WERT" result="STAT_RAD_GESCHW_VR_WERT" format="L" log_tag="STAT_RAD_GESCHW_VR_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_HL_WERT" result="STAT_RAD_GESCHW_HL_WERT" format="L" log_tag="STAT_RAD_GESCHW_HL_WERT" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_RAD_GESCHW_HR_WERT" result="STAT_RAD_GESCHW_HR_WERT" format="L" log_tag="STAT_RAD_GESCHW_HR_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

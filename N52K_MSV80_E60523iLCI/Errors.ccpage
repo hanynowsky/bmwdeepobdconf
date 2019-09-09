@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME">
+    <strings>
+      <string name="!PAGE_NAME">Errors</string>
+      <string name="!ECU#DME/DDE">DME/DDE</string>
+      <string name="!ECU#EGS">EGS</string>
+      <string name="!ECU#KOMBI">KOMBI</string>
+      <string name="!ECU#SIM/SGM">SIM/SGM</string>
+      <string name="!ECU#BZM/SZM">BZM/SZM</string>
+      <string name="!ECU#MOSTGW">MOSTGW</string>
+      <string name="!ECU#CAS">CAS</string>
+      <string name="!ECU#CID">CID</string>
+      <string name="!ECU#DSC">DSC</string>
+      <string name="!ECU#EKP">EKP</string>
+      <string name="!ECU#GWS">GWS</string>
+      <string name="!ECU#KBM">KBM</string>
+      <string name="!ECU#KLIMA">KLIMA</string>
+      <string name="!ECU#LM">LM</string>
+      <string name="!ECU#MMI/CCC">MMI/CCC</string>
+      <string name="!ECU#RLS">RLS</string>
+      <string name="!ECU#SZL">SZL</string>
+      <string name="!ECU#ZBE">ZBE</string>
+      <string name="!ECU#ZGM">ZGM</string>
+    </strings>
+    <read_errors sgbd_functional="e60">
+      <ecu name="!ECU#DME/DDE" sgbd="MSV80" />
+      <ecu name="!ECU#EGS" sgbd="GS19D" />
+      <ecu name="!ECU#KOMBI" sgbd="KOMB60" />
+      <ecu name="!ECU#SIM/SGM" sgbd="ACSM60" />
+      <ecu name="!ECU#BZM/SZM" sgbd="SZM_60" />
+      <ecu name="!ECU#MOSTGW" sgbd="CHAMPGW" />
+      <ecu name="!ECU#CAS" sgbd="CAS" />
+      <ecu name="!ECU#CID" sgbd="CID_90" />
+      <ecu name="!ECU#DSC" sgbd="DSC_60PP" />
+      <ecu name="!ECU#EKP" sgbd="EKPM60_3" />
+      <ecu name="!ECU#GWS" sgbd="GWS_60" />
+      <ecu name="!ECU#KBM" sgbd="KBM_60" />
+      <ecu name="!ECU#KLIMA" sgbd="IHKA60_2" />
+      <ecu name="!ECU#LM" sgbd="LM_AHL_2" />
+      <ecu name="!ECU#MMI/CCC" sgbd="CHAMP" />
+      <ecu name="!ECU#RLS" sgbd="RLSS70" />
+      <ecu name="!ECU#SZL" sgbd="SZL_60" />
+      <ecu name="!ECU#ZBE" sgbd="ECL60" />
+      <ecu name="!ECU#ZGM" sgbd="KGM_60" />
+    </read_errors>
+  </page>
+</fragment>

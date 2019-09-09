@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="EGS.log">
+    <strings>
+      <string name="!PAGE_NAME">Transmission</string>
+      <string name="!JOB#AIF_LESEN#AIF_FG_NR">Chassis</string>
+      <string name="!JOB#AIF_LESEN#AIF_DATUM">AIF Date</string>
+      <string name="!JOB#AIF_LESEN#AIF_ANZ_FREI">AIF Free Entries</string>
+      <string name="!JOB#AIF_LESEN#AIF_ANZAHL_PROG">AIF Prog.Number</string>
+      <string name="!JOB#STATUS_GETRIEBETEMPERATUR#STAT_GETRIEBETEMPERATUR_WERT">Tans Fluid Temp C°</string>
+      <string name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT">Engine Temperature</string>
+      <string name="!JOB#STATUS_ABTRIEBSDREHZAHL#STAT_ABTRIEBSDREHZAHL_WERT">Trans Output Speed</string>
+      <string name="!JOB#STATUS_GEAR#STAT_WK_WERT">Gear Lockup Clutch Status</string>
+      <string name="!JOB#STATUS_GEAR#STAT_SA_WERT">Gear Switch Status</string>
+      <string name="!JOB#STATUS_GETRIEBEPOSITION#STAT_GETRIEBEPOSITION_WERT">Gear position</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_GETRIEBETEMPERATUR_WERT">Trans Temp</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_MOTORSOLLMOMENT_WERT">Motor Torque</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_WK_WERT">Lockup Clutch Status</string>
+      <string name="!JOB#STATUS_IO_LESEN#STAT_BATTERIESPANNUNG_WERT">Battery volts</string>
+    </strings>
+    <jobs sgbd="GS19D">
+      <job name="AIF_LESEN">
+        <display name="!JOB#AIF_LESEN#AIF_FG_NR" result="AIF_FG_NR" format="" grid-type="text" min-value="0" max-value="100" log_tag="AIF_FG_NR" />
+        <display name="!JOB#AIF_LESEN#AIF_DATUM" result="AIF_DATUM" format="T" grid-type="text" min-value="0" max-value="100" log_tag="AIF Date" />
+        <display name="!JOB#AIF_LESEN#AIF_ANZ_FREI" result="AIF_ANZ_FREI" format=".0R" grid-type="text" min-value="0" max-value="100" log_tag="AIF Existing entries" />
+        <display name="!JOB#AIF_LESEN#AIF_ANZAHL_PROG" result="AIF_ANZAHL_PROG" format=".1R" grid-type="text" min-value="0" max-value="100" log_tag="Number of flashes" />
+      </job>
+      <job name="STATUS_GETRIEBETEMPERATUR">
+        <display name="!JOB#STATUS_GETRIEBETEMPERATUR#STAT_GETRIEBETEMPERATUR_WERT" result="STAT_GETRIEBETEMPERATUR_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_GETRIEBETEMPERATUR_WERT" />
+      </job>
+      <job name="STATUS_MOTORTEMPERATUR">
+        <display name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT" result="STAT_MOTORTEMPERATUR_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_MOTORTEMPERATUR_WERT" />
+      </job>
+      <job name="STATUS_ABTRIEBSDREHZAHL">
+        <display name="!JOB#STATUS_ABTRIEBSDREHZAHL#STAT_ABTRIEBSDREHZAHL_WERT" result="STAT_ABTRIEBSDREHZAHL_WERT" format=".1R" grid-type="text" min-value="0" max-value="100" log_tag="Output Speed" />
+      </job>
+      <job name="STATUS_GEAR">
+        <display name="!JOB#STATUS_GEAR#STAT_WK_WERT" result="STAT_WK_WERT" format="" grid-type="text" min-value="0" max-value="100" log_tag="STAT_WK_WERT" />
+        <display name="!JOB#STATUS_GEAR#STAT_SA_WERT" result="STAT_SA_WERT" format="" grid-type="text" min-value="0" max-value="100" log_tag="STAT_SA_WERT" />
+      </job>
+      <job name="STATUS_GETRIEBEPOSITION">
+        <display name="!JOB#STATUS_GETRIEBEPOSITION#STAT_GETRIEBEPOSITION_WERT" result="STAT_GETRIEBEPOSITION_WERT" format=".0R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_GETRIEBEPOSITION_WERT" />
+      </job>
+      <job name="STATUS_IO_LESEN">
+        <display name="!JOB#STATUS_IO_LESEN#STAT_GETRIEBETEMPERATUR_WERT" result="STAT_GETRIEBETEMPERATUR_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Fluid Temp" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_MOTORSOLLMOMENT_WERT" result="STAT_MOTORSOLLMOMENT_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Engine Torque" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_WK_WERT" result="STAT_WK_WERT" format=".0R" grid-type="text" min-value="0" max-value="100" log_tag="Clutch Status" />
+        <display name="!JOB#STATUS_IO_LESEN#STAT_BATTERIESPANNUNG_WERT" result="STAT_BATTERIESPANNUNG_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Battery V" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

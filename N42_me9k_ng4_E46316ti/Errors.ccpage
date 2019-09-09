@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME">
+    <strings>
+      <string name="!PAGE_NAME">Errors</string>
+      <string name="!ECU#ME9K_NG4">ME9K_NG4</string>
+      <string name="!ECU#KOMBI46">KOMBI46</string>
+      <string name="!ECU#ASCMK20">ASCMK20</string>
+      <string name="!ECU#EWS3">EWS3</string>
+      <string name="!ECU#IHKR46">IHKR46</string>
+      <string name="!ECU#LSZ">LSZ</string>
+      <string name="!ECU#MRS4">MRS4</string>
+      <string name="!ECU#RADIO">RADIO</string>
+      <string name="!ECU#ZKE5">ZKE5</string>
+    </strings>
+    <read_errors>
+      <ecu name="!ECU#ME9K_NG4" sgbd="me9k_ng4" />
+      <ecu name="!ECU#KOMBI46" sgbd="kombi46" />
+      <ecu name="!ECU#ASCMK20" sgbd="ascmk20" />
+      <ecu name="!ECU#EWS3" sgbd="ews3" />
+      <ecu name="!ECU#IHKR46" sgbd="ihkr46" />
+      <ecu name="!ECU#LSZ" sgbd="lsz" />
+      <ecu name="!ECU#MRS4" sgbd="mrs4" />
+      <ecu name="!ECU#RADIO" sgbd="radio" />
+      <ecu name="!ECU#ZKE5" sgbd="zke5" />
+    </read_errors>
+  </page>
+</fragment>

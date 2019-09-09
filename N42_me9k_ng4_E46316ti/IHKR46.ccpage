@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="IHKR46.log">
+    <strings>
+      <string name="!PAGE_NAME">A/C (IHKR46)</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_WERT">Heat exchanger sensor C°</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TVERDAMPFER_WERT">Evaporator temperature sensor C°</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_DRUCKSENSOR_WERT">Pressure sensor (bar) </string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_LUFTVERTEILUNG_POTI_WERT">Air distribution pot</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_SOLL_WERT">Position of temperature potentiometer C°</string>
+      <string name="!JOB#STATUS_ANALOGEINGAENGE#STAT_GEBLAESE_WERT">Blower knob position (%)</string>
+      <string name="!JOB#STATUS_REGLERGROESSEN#STAT_DREHZAHL_WERT">RPM</string>
+      <string name="!JOB#STATUS_REGLERGROESSEN#STAT_DRUCKSENSOR_WERT">Pressure (bar)</string>
+    </strings>
+    <jobs sgbd="ihkr46">
+      <job name="STATUS_ANALOGEINGAENGE">
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_WT_WERT" result="STAT_WT_WERT" format=".2R" log_tag="STAT_WT_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_TVERDAMPFER_WERT" result="STAT_TVERDAMPFER_WERT" format=".2R" log_tag="STAT_TVERDAMPFER_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_DRUCKSENSOR_WERT" result="STAT_DRUCKSENSOR_WERT" format=".2R" log_tag="STAT_DRUCKSENSOR_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_LUFTVERTEILUNG_POTI_WERT" result="STAT_LUFTVERTEILUNG_POTI_WERT" format=".2R" log_tag="STAT_LUFTVERTEILUNG_POTI_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_SOLL_WERT" result="STAT_SOLL_WERT" format=".0R" log_tag="STAT_SOLL_WERT" />
+        <display name="!JOB#STATUS_ANALOGEINGAENGE#STAT_GEBLAESE_WERT" result="STAT_GEBLAESE_WERT" format=".0R" log_tag="STAT_GEBLAESE_WERT" />
+      </job>
+      <job name="STATUS_REGLERGROESSEN">
+        <display name="!JOB#STATUS_REGLERGROESSEN#STAT_DREHZAHL_WERT" result="STAT_DREHZAHL_WERT" format=".2R" log_tag="STAT_DREHZAHL_WERT" />
+        <display name="!JOB#STATUS_REGLERGROESSEN#STAT_DRUCKSENSOR_WERT" result="STAT_DRUCKSENSOR_WERT" format=".2R" log_tag="STAT_DRUCKSENSOR_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

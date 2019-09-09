@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="ME9K_NG4.log">
+    <strings>
+      <string name="!PAGE_NAME">Engine</string>
+      <string name="!JOB#AIF_LESEN#AIF_FG_NR">Chassis</string>
+      <string name="!JOB#AIF_LESEN#AIF_FG_NR_LANG">Chassis serial</string>
+      <string name="!JOB#AIF_LESEN#AIF_SW_NR">Software Number</string>
+      <string name="!JOB#AIF_LESEN#AIF_PROG_NR">Program Number</string>
+      <string name="!JOB#STATUS_VVT_ANSCHLAG#STATUS1_WERT">VVT Stroke B1</string>
+      <string name="!JOB#STATUS_VVT_ANSCHLAG#STATUS2_WERT">VVT Stroke B2</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI1_WERT">RR1</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI2_WERT">RR2</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI3_WERT">RR3</string>
+      <string name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI4_WERT">RR4</string>
+      <string name="!JOB#STATUS_CO#STAT_CO_POT_WERT">LL CO Adjustment</string>
+      <string name="!JOB#STATUS_LLABG#STAT_DNLLMV">Idle adjustment - FS</string>
+      <string name="!JOB#STATUS_LLABG#STAT_DNSACMV">Idle adjustment AC-FS</string>
+      <string name="!JOB#STATUS_LLABG#STAT_DNSLBV">Idle adjustment Low Battery</string>
+      <string name="!JOB#STATUS_LLABG#STAT_DNFSACMV">Idle adjustment AC+FS</string>
+      <string name="!JOB#STATUS_LLABG#STAT_DNFSMV">Idle adjustment FS</string>
+      <string name="!JOB#STATUS_VARIANTE#STAT_MFL_EIN">MFL Status</string>
+      <string name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL1">DBAW_CYL1</string>
+      <string name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL2">DBAW_CYL2</string>
+      <string name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL3">DBAW_CYL3</string>
+      <string name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL4">DBAW_CYL4</string>
+      <string name="!JOB#STATUS_DIGITAL#STAT_SBBHK2_EIN">O2 postcat 2</string>
+      <string name="!JOB#STATUS_DIGITAL#STAT_SBBHK_EIN">O2 postcat 1</string>
+      <string name="!JOB#STATUS_DIGITAL#STAT_SBBVK2_EIN">O2 precat 2</string>
+      <string name="!JOB#STATUS_DIGITAL#STAT_SBBVK_EIN">O2 precat 1</string>
+      <string name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT">Engine Temperature</string>
+      <string name="!JOB#STATUS_MOTORDREHZAHL#STAT_MOTORDREHZAHL_WERT">Engine Speed</string>
+      <string name="!JOB#STATUS_AN_LUFTTEMPERATUR#STAT_AN_LUFTTEMPERATUR_WERT">Air Temperature</string>
+      <string name="!JOB#STATUS_LMM_MASSE#STAT_LMM_MASSE_WERT">Air Mass g/m3</string>
+      <string name="!JOB#STATUS_L_SONDE_2#STAT_L_SONDE_2_WERT">Lambda Sensor 2 Volts</string>
+      <string name="!JOB#STATUS_L_SONDE_2#STAT_L_SONDE_2_N40_WERT">Lambda Sensor B2 Volts N40</string>
+      <string name="!JOB#STATUS_L_SONDE_H#STAT_L_SONDE_H_WERT">Lambda Sensor Rear Volts</string>
+      <string name="!JOB#STATUS_L_SONDE_2_H#STAT_L_SONDE_2_H_WERT">Lambda Sensor Rear Volts B2</string>
+      <string name="!JOB#STATUS_INT#STAT_INT_WERT">Oxygen Sensor B1</string>
+      <string name="!JOB#STATUS_INT_2#STAT_INT_2_WERT">Oxygen Sensor B2</string>
+      <string name="!JOB#STATUS_ADD#STAT_ADD_WERT">Additive Lambda Control 1</string>
+      <string name="!JOB#STATUS_ADD_2#STAT_ADD_2_WERT">Additive Lambda Control 2</string>
+      <string name="!JOB#STATUS_MUL#STAT_MUL_WERT">Multiplicative Lambda Control 1</string>
+      <string name="!JOB#STATUS_MUL_2#STAT_MUL_2_WERT">Multiplicative Lambda Control 2</string>
+      <string name="!JOB#STATUS_UBATT#STAT_UBATT_WERT">Battery voltage</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI1_WERT">Rough C1</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI2_WERT">Rough C2</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI3_WERT">Rough C3</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI4_WERT">Rough C4</string>
+      <string name="!JOB#STATUS_CO_ABGLEICH#STAT_CO_ABGLEICH_WERT">LL_CO_Adjustment</string>
+    </strings>
+    <jobs sgbd="me9k_ng4">
+      <job name="AIF_LESEN">
+        <display name="!JOB#AIF_LESEN#AIF_FG_NR" result="AIF_FG_NR" format="T" log_tag="AIF_FG_NR" />
+        <display name="!JOB#AIF_LESEN#AIF_FG_NR_LANG" result="AIF_FG_NR_LANG" format="T" log_tag="AIF_FG_NR_LANG" />
+        <display name="!JOB#AIF_LESEN#AIF_SW_NR" result="AIF_SW_NR" format="T" log_tag="AIF_SW_NR" />
+        <display name="!JOB#AIF_LESEN#AIF_PROG_NR" result="AIF_PROG_NR" format="T" log_tag="AIF_PROG_NR" />
+      </job>
+      <job name="STATUS_VVT_ANSCHLAG">
+        <display name="!JOB#STATUS_VVT_ANSCHLAG#STATUS1_WERT" result="STATUS1_WERT" format="D" log_tag="STATUS1_WERT" />
+        <display name="!JOB#STATUS_VVT_ANSCHLAG#STATUS2_WERT" result="STATUS2_WERT" format="D" log_tag="STATUS2_WERT" />
+      </job>
+      <job name="STATUS_LAUFUNRUHE">
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI1_WERT" result="STAT_LUTSFI1_WERT" format=".2R" log_tag="STAT_LUTSFI1_WERT" />
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI2_WERT" result="STAT_LUTSFI2_WERT" format=".0R" log_tag="STAT_LUTSFI2_WERT" />
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI3_WERT" result="STAT_LUTSFI3_WERT" format=".2R" log_tag="STAT_LUTSFI3_WERT" />
+        <display name="!JOB#STATUS_LAUFUNRUHE#STAT_LUTSFI4_WERT" result="STAT_LUTSFI4_WERT" format=".2R" log_tag="STAT_LUTSFI4_WERT" />
+      </job>
+      <job name="STATUS_CO">
+        <display name="!JOB#STATUS_CO#STAT_CO_POT_WERT" result="STAT_CO_POT_WERT" format=".2R" log_tag="STAT_CO_POT_WERT" />
+      </job>
+      <job name="STATUS_LLABG">
+        <display name="!JOB#STATUS_LLABG#STAT_DNLLMV" result="STAT_DNLLMV" format=".2R" log_tag="STAT_DNLLMV" />
+        <display name="!JOB#STATUS_LLABG#STAT_DNSACMV" result="STAT_DNSACMV" format=".2R" log_tag="STAT_DNSACMV" />
+        <display name="!JOB#STATUS_LLABG#STAT_DNSLBV" result="STAT_DNSLBV" format=".2R" log_tag="STAT_DNSLBV" />
+        <display name="!JOB#STATUS_LLABG#STAT_DNFSACMV" result="STAT_DNFSACMV" format=".2R" log_tag="STAT_DNFSACMV" />
+        <display name="!JOB#STATUS_LLABG#STAT_DNFSMV" result="STAT_DNFSMV" format=".2R" log_tag="STAT_DNFSMV" />
+      </job>
+      <job name="STATUS_VARIANTE">
+        <display name="!JOB#STATUS_VARIANTE#STAT_MFL_EIN" result="STAT_MFL_EIN" format="D" log_tag="STAT_MFL_EIN" />
+      </job>
+      <job name="STATUS_DBAW">
+        <display name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL1" result="STAT_DBAWCNT_ZYL1" format=".2R" log_tag="STAT_DBAWCNT_ZYL1" />
+        <display name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL2" result="STAT_DBAWCNT_ZYL2" format=".2R" log_tag="STAT_DBAWCNT_ZYL2" />
+        <display name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL3" result="STAT_DBAWCNT_ZYL3" format=".2R" log_tag="STAT_DBAWCNT_ZYL3" />
+        <display name="!JOB#STATUS_DBAW#STAT_DBAWCNT_ZYL4" result="STAT_DBAWCNT_ZYL4" format=".2R" log_tag="STAT_DBAWCNT_ZYL4" />
+      </job>
+      <job name="STATUS_DIGITAL">
+        <display name="!JOB#STATUS_DIGITAL#STAT_SBBHK2_EIN" result="STAT_SBBHK2_EIN" format="" log_tag="STAT_SBBHK2_EIN" />
+        <display name="!JOB#STATUS_DIGITAL#STAT_SBBHK_EIN" result="STAT_SBBHK_EIN" format="D" log_tag="STAT_SBBHK_EIN" />
+        <display name="!JOB#STATUS_DIGITAL#STAT_SBBVK2_EIN" result="STAT_SBBVK2_EIN" format="" log_tag="STAT_SBBVK2_EIN" />
+        <display name="!JOB#STATUS_DIGITAL#STAT_SBBVK_EIN" result="STAT_SBBVK_EIN" format="" log_tag="STAT_SBBVK_EIN" />
+      </job>
+      <job name="STATUS_MOTORTEMPERATUR">
+        <display name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT" result="STAT_MOTORTEMPERATUR_WERT" format=".2R" log_tag="STAT_MOTORTEMPERATUR_WERT" />
+      </job>
+      <job name="STATUS_MOTORDREHZAHL">
+        <display name="!JOB#STATUS_MOTORDREHZAHL#STAT_MOTORDREHZAHL_WERT" result="STAT_MOTORDREHZAHL_WERT" format=".0R" log_tag="STAT_MOTORDREHZAHL_WERT" />
+      </job>
+      <job name="STATUS_AN_LUFTTEMPERATUR">
+        <display name="!JOB#STATUS_AN_LUFTTEMPERATUR#STAT_AN_LUFTTEMPERATUR_WERT" result="STAT_AN_LUFTTEMPERATUR_WERT" format=".2R" log_tag="STAT_AN_LUFTTEMPERATUR_WERT" />
+      </job>
+      <job name="STATUS_LMM_MASSE">
+        <display name="!JOB#STATUS_LMM_MASSE#STAT_LMM_MASSE_WERT" result="STAT_LMM_MASSE_WERT" format=".2R" log_tag="STAT_LMM_MASSE_WERT" />
+      </job>
+      <job name="STATUS_L_SONDE_2">
+        <display name="!JOB#STATUS_L_SONDE_2#STAT_L_SONDE_2_WERT" result="STAT_L_SONDE_2_WERT" format=".2R" log_tag="STAT_L_SONDE_2_WERT" />
+        <display name="!JOB#STATUS_L_SONDE_2#STAT_L_SONDE_2_N40_WERT" result="STAT_L_SONDE_2_N40_WERT" format=".2R" log_tag="STAT_L_SONDE_2_N40_WERT" />
+      </job>
+      <job name="STATUS_L_SONDE_H">
+        <display name="!JOB#STATUS_L_SONDE_H#STAT_L_SONDE_H_WERT" result="STAT_L_SONDE_H_WERT" format=".2R" log_tag="STAT_L_SONDE_H_WERT" />
+      </job>
+      <job name="STATUS_L_SONDE_2_H">
+        <display name="!JOB#STATUS_L_SONDE_2_H#STAT_L_SONDE_2_H_WERT" result="STAT_L_SONDE_2_H_WERT" format=".2R" log_tag="STAT_L_SONDE_2_H_WERT" />
+      </job>
+      <job name="STATUS_INT">
+        <display name="!JOB#STATUS_INT#STAT_INT_WERT" result="STAT_INT_WERT" format=".2R" log_tag="STAT_INT_WERT" />
+      </job>
+      <job name="STATUS_INT_2">
+        <display name="!JOB#STATUS_INT_2#STAT_INT_2_WERT" result="STAT_INT_2_WERT" format=".2R" log_tag="STAT_INT_2_WERT" />
+      </job>
+      <job name="STATUS_ADD">
+        <display name="!JOB#STATUS_ADD#STAT_ADD_WERT" result="STAT_ADD_WERT" format=".2R" log_tag="STAT_ADD_WERT" />
+      </job>
+      <job name="STATUS_ADD_2">
+        <display name="!JOB#STATUS_ADD_2#STAT_ADD_2_WERT" result="STAT_ADD_2_WERT" format=".2R" log_tag="STAT_ADD_2_WERT" />
+      </job>
+      <job name="STATUS_MUL">
+        <display name="!JOB#STATUS_MUL#STAT_MUL_WERT" result="STAT_MUL_WERT" format=".2R" log_tag="STAT_MUL_WERT" />
+      </job>
+      <job name="STATUS_MUL_2">
+        <display name="!JOB#STATUS_MUL_2#STAT_MUL_2_WERT" result="STAT_MUL_2_WERT" format=".2R" log_tag="STAT_MUL_2_WERT" />
+      </job>
+      <job name="STATUS_UBATT">
+        <display name="!JOB#STATUS_UBATT#STAT_UBATT_WERT" result="STAT_UBATT_WERT" format=".2R" log_tag="STAT_UBATT_WERT" />
+      </job>
+      <job name="STATUS_MOTORLAUFUNRUHE">
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI1_WERT" result="STAT_LUTSFI1_WERT" format=".2R" log_tag="STAT_LUTSFI1_WERT" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI2_WERT" result="STAT_LUTSFI2_WERT" format=".2R" log_tag="STAT_LUTSFI2_WERT" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI3_WERT" result="STAT_LUTSFI3_WERT" format=".2R" log_tag="STAT_LUTSFI3_WERT" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_LUTSFI4_WERT" result="STAT_LUTSFI4_WERT" format=".2R" log_tag="STAT_LUTSFI4_WERT" />
+      </job>
+      <job name="STATUS_CO_ABGLEICH">
+        <display name="!JOB#STATUS_CO_ABGLEICH#STAT_CO_ABGLEICH_WERT" result="STAT_CO_ABGLEICH_WERT" format=".2R" log_tag="STAT_CO_ABGLEICH_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="RADIO.log">
+    <strings>
+      <string name="!PAGE_NAME">RADIO</string>
+      <string name="!JOB#STATUS_LESEN#STAT_MIT_DSP">DSP</string>
+      <string name="!JOB#STATUS_LESEN#STAT_VF_LAUT_WERT">Volume</string>
+      <string name="!JOB#STATUS_LESEN#STAT_FELDSTAERKE_WERT">Receiver strength (1-15)</string>
+      <string name="!JOB#STATUS_LESEN#STAT_AUXADAPTER">AUX ADAPTER</string>
+      <string name="!JOB#STATUS_ANT_QFS#STAT_ANT_PW">Antenna power</string>
+    </strings>
+    <jobs sgbd="radio">
+      <job name="STATUS_LESEN">
+        <display name="!JOB#STATUS_LESEN#STAT_MIT_DSP" result="STAT_MIT_DSP" format=".0R" log_tag="STAT_MIT_DSP" />
+        <display name="!JOB#STATUS_LESEN#STAT_VF_LAUT_WERT" result="STAT_VF_LAUT_WERT" format=".0R" log_tag="STAT_VF_LAUT_WERT" />
+        <display name="!JOB#STATUS_LESEN#STAT_FELDSTAERKE_WERT" result="STAT_FELDSTAERKE_WERT" format=".0R" log_tag="STAT_FELDSTAERKE_WERT" />
+        <display name="!JOB#STATUS_LESEN#STAT_AUXADAPTER" result="STAT_AUXADAPTER" format=".0R" log_tag="STAT_AUXADAPTER" />
+      </job>
+      <job name="STATUS_ANT_QFS">
+        <display name="!JOB#STATUS_ANT_QFS#STAT_ANT_PW" result="STAT_ANT_PW" format=".0R" log_tag="STAT_ANT_PW" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

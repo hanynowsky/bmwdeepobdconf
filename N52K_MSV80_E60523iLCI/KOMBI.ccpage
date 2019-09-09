@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="KOMBI.log">
+    <strings>
+      <string name="!PAGE_NAME">cluster</string>
+      <string name="!JOB#AIF_LESEN#AIF_FG_NR">Chassis</string>
+      <string name="!JOB#STATUS_A_TEMP_LESEN#STAT_A_TEMP_ANZEIGE">Outside Temp</string>
+      <string name="!JOB#STATUS_A_TEMP_LESEN#STAT_A_TEMP_ROHWERT">Raw External Temp</string>
+      <string name="!JOB#STATUS_DREHZAHL_LESEN#STAT_DREHZAHL_WERT">RPM</string>
+      <string name="!JOB#STATUS_TACHO_LESEN#STAT_GESCHWINDIGKEIT_WERT">Velocity km/h</string>
+      <string name="!JOB#STATUS_TANKINHALT#STAT_HEBELGEBER1_WERT">Tank 1 level %</string>
+      <string name="!JOB#STATUS_TANKINHALT#STAT_HEBELGEBER2_WERT">Tank 2 Level %</string>
+      <string name="!JOB#STATUS_TANKINHALT#STAT_SUMMENWERT_WERT">Tank Total</string>
+      <string name="!JOB#STATUS_TANKINHALT#STAT_GEDAEMPFT_ANZ_WERT">Fuel Liters</string>
+    </strings>
+    <jobs sgbd="KOMB60">
+      <job name="AIF_LESEN">
+        <display name="!JOB#AIF_LESEN#AIF_FG_NR" result="AIF_FG_NR" format="" grid-type="text" min-value="0" max-value="100" log_tag="AIF_FG_NR" />
+      </job>
+      <job name="STATUS_A_TEMP_LESEN">
+        <display name="!JOB#STATUS_A_TEMP_LESEN#STAT_A_TEMP_ANZEIGE" result="STAT_A_TEMP_ANZEIGE" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_A_TEMP_ANZEIGE" />
+        <display name="!JOB#STATUS_A_TEMP_LESEN#STAT_A_TEMP_ROHWERT" result="STAT_A_TEMP_ROHWERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="TempSTAT_A_TEMP_ROHWERT" />
+      </job>
+      <job name="STATUS_DREHZAHL_LESEN">
+        <display name="!JOB#STATUS_DREHZAHL_LESEN#STAT_DREHZAHL_WERT" result="STAT_DREHZAHL_WERT" format=".0R" grid-type="text" min-value="0" max-value="7000" log_tag="STAT_DREHZAHL_WERT" />
+      </job>
+      <job name="STATUS_TACHO_LESEN">
+        <display name="!JOB#STATUS_TACHO_LESEN#STAT_GESCHWINDIGKEIT_WERT" result="STAT_GESCHWINDIGKEIT_WERT" format=".1R" grid-type="text" min-value="0" max-value="260" log_tag="STAT_GESCHWINDIGKEIT_WERT" />
+      </job>
+      <job name="STATUS_TANKINHALT">
+        <display name="!JOB#STATUS_TANKINHALT#STAT_HEBELGEBER1_WERT" result="STAT_HEBELGEBER1_WERT" format="" grid-type="text" min-value="0" max-value="100" log_tag="STAT_HEBELGEBER1_WERT" />
+        <display name="!JOB#STATUS_TANKINHALT#STAT_HEBELGEBER2_WERT" result="STAT_HEBELGEBER2_WERT" format="" grid-type="text" min-value="0" max-value="100" log_tag="STAT_HEBELGEBER2_WERT" />
+        <display name="!JOB#STATUS_TANKINHALT#STAT_SUMMENWERT_WERT" result="STAT_SUMMENWERT_WERT" format="" grid-type="text" min-value="0" max-value="100" log_tag="STAT_SUMMENWERT_WERT" />
+        <display name="!JOB#STATUS_TANKINHALT#STAT_GEDAEMPFT_ANZ_WERT" result="STAT_GEDAEMPFT_ANZ_WERT" format=".2R" grid-type="text" min-value="0" max-value="70" log_tag="STAT_GEDAEMPFT_ANZ_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

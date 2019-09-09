@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="DME_DDE.log">
+    <strings>
+      <string name="!PAGE_NAME">Engine</string>
+      <string name="!JOB#AIF_LESEN#AIF_FG_NR">Chassis</string>
+      <string name="!JOB#AIF_LESEN#AIF_FG_NR_LANG">Chassis_number</string>
+      <string name="!JOB#AIF_LESEN#AIF_DATUM">Flash Date</string>
+      <string name="!JOB#AIF_LESEN#AIF_ZB_NR">Assembly</string>
+      <string name="!JOB#AIF_LESEN#AIF_PROG_NR">Program number</string>
+      <string name="!JOB#AIF_LESEN#AIF_ANZ_FREI">AIF Free Entries</string>
+      <string name="!JOB#AIF_LESEN#AIF_ANZAHL_PROG">Number of Flashes</string>
+      <string name="!JOB#STATUS_MOTORDREHZAHL#STAT_MOTORDREHZAHL_WERT">RPM</string>
+      <string name="!JOB#STATUS_ADD#STAT_ADD_WERT">Adaption Add B1</string>
+      <string name="!JOB#STATUS_ADD_2#STAT_ADD_2_WERT">Adaption Add B2</string>
+      <string name="!JOB#STATUS_MUL#STAT_MUL_WERT">Adaption Multi B1</string>
+      <string name="!JOB#STATUS_MUL_2#STAT_MUL_2_WERT">Adaption Multi B2</string>
+      <string name="!JOB#INNENTEMP_LESEN#SG_INNENTEMP_WERT">ECU Temp</string>
+      <string name="!JOB#STATUS_AN_LUFTTEMPERATUR#STAT_AN_LUFTTEMPERATUR_WERT">Intake 1 Temp</string>
+      <string name="!JOB#STATUS_DFMONITOR#STAT_AUSGANG_WERT">Battery Charge %</string>
+      <string name="!JOB#STATUS_DISA#STAT_STAT_DISA_WERT">DISA 1 %</string>
+      <string name="!JOB#STATUS_DISA2#STAT_STAT_DISA2_WERT">DISA 2 %</string>
+      <string name="!JOB#STATUS_E_LUEFTER#STAT_STAT_ELUE_WERT">E-Fan %</string>
+      <string name="!JOB#STATUS_E_LUEFTER#STAT_PHY_TCO_WERT">Coolant Temp 1</string>
+      <string name="!JOB#STATUS_E_LUEFTER#STAT_PHY_TCO_2_WERT">Coolant Outlet Temp</string>
+      <string name="!JOB#STATUS_EBL#STAT_STAT_EBL">E-Box Fan Status</string>
+      <string name="!JOB#STATUS_EBL#STAT_PHY_TECU_WERT">ECU Temp</string>
+      <string name="!JOB#STATUS_EISYGD#STAT_MRNN_TEST_DK_WERT">MAF Adaption (-1 -- +1)</string>
+      <string name="!JOB#STATUS_EKP#STAT_STAT_EKP1_WERT">Fuel Pump 1 Status %</string>
+      <string name="!JOB#STATUS_HFMS#STAT_PHY_HFMS_WERT">HFMS %</string>
+      <string name="!JOB#STATUS_KFT#STAT_STAT_KFT_WERT">Thermostat %</string>
+      <string name="!JOB#STATUS_KQE#STAT_KM1QB">RON Quality (0 - 3)</string>
+      <string name="!JOB#STATUS_L_SONDE#STAT_L_SONDE_WERT">Lambda Probe Pre-Cat B1 (0-5 Volts)</string>
+      <string name="!JOB#STATUS_L_SONDE#STAT_PHY_LSVK1_WERT">Lambda Probe Pre-Cat B1 (0-32)</string>
+      <string name="!JOB#STATUS_L_SONDE_2#STAT_L_SONDE_2_WERT">Lambda Sensor Pre-Cat B2 Volts (0-5)</string>
+      <string name="!JOB#STATUS_L_SONDE_2#STAT_PHY_LSVK2_WERT">Lambda Sensor Pre-Cat B2 (0-32)</string>
+      <string name="!JOB#STATUS_L_SONDE_2_H#STAT_L_SONDE_2_H_WERT">Lambda Probe Post-Cat B2 Volts (0-5)</string>
+      <string name="!JOB#STATUS_L_SONDE_H#STAT_L_SONDE_H_WERT">Lambda Probe Post-Cat B1 Volts (0-5) </string>
+      <string name="!JOB#STATUS_LMM_MASSE#STAT_LMM_MASSE_WERT">MAF Flow Kg.h</string>
+      <string name="!JOB#STATUS_LSH1#STAT_STAT_LSH1_WERT">Lambda Heating Pre-Cat B1 %</string>
+      <string name="!JOB#STATUS_LSH2#STAT_STAT_LSH2_WERT">Lambda Heating Post-Cat B1 %</string>
+      <string name="!JOB#STATUS_LSH3#STAT_STAT_LSH3_WERT">Lambda Heating Pre-Cat B2 %</string>
+      <string name="!JOB#STATUS_LSH4#STAT_STAT_LSH4_WERT">Lambda Heating Post-Cat B2 %</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL1_WERT">RR1</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL5_WERT">RR2</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL3_WERT">RR3</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL6_WERT">RR4</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL2_WERT">RR5</string>
+      <string name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL4_WERT">RR6</string>
+      <string name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT">Motor Temperature</string>
+      <string name="!JOB#STATUS_ODR#STAT_PHY_P_OEL_IST_WERT">Oil Pressure hPa</string>
+      <string name="!JOB#STATUS_OEL#STAT_PHY_TOEL_WERT">Oil Temp</string>
+      <string name="!JOB#STATUS_OEL#STAT_PHY_NIVOEL_WERT">Oil level (max = 74.7)</string>
+      <string name="!JOB#STATUS_OEL#STAT_PHY_QOEL_WERT">Oil Quality (0-6)</string>
+      <string name="!JOB#STATUS_PWG_POTI_SPANNUNG#STAT_STAT_PWG1_WERT">Driver Request %</string>
+      <string name="!JOB#STATUS_UBAT#STAT_PHY_UBAT_WERT">Battery Volts</string>
+      <string name="!JOB#STATUS_UBATT#STAT_UBATT_WERT">DME Voltage</string>
+    </strings>
+    <jobs sgbd="MSV80">
+      <job name="AIF_LESEN">
+        <display name="!JOB#AIF_LESEN#AIF_FG_NR" result="AIF_FG_NR" format="" grid-type="text" min-value="0" max-value="100" log_tag="AIF_FG_NR" />
+        <display name="!JOB#AIF_LESEN#AIF_FG_NR_LANG" result="AIF_FG_NR_LANG" format="" grid-type="text" min-value="0" max-value="100" log_tag="AIF_FG_NR_LANG" />
+        <display name="!JOB#AIF_LESEN#AIF_DATUM" result="AIF_DATUM" format="T" grid-type="text" min-value="0" max-value="100" log_tag="AIF_DATUM" />
+        <display name="!JOB#AIF_LESEN#AIF_ZB_NR" result="AIF_ZB_NR" format="" grid-type="text" min-value="0" max-value="100" log_tag="AIF_ZB_NR" />
+        <display name="!JOB#AIF_LESEN#AIF_PROG_NR" result="AIF_PROG_NR" format="" grid-type="text" min-value="0" max-value="100" log_tag="AIF_PROG_NR" />
+        <display name="!JOB#AIF_LESEN#AIF_ANZ_FREI" result="AIF_ANZ_FREI" format=".0R" grid-type="text" min-value="0" max-value="100" log_tag="AIF_ANZ_FREI" />
+        <display name="!JOB#AIF_LESEN#AIF_ANZAHL_PROG" result="AIF_ANZAHL_PROG" format=".0R" grid-type="text" min-value="0" max-value="100" log_tag="AIF_ANZAHL_PROG" />
+      </job>
+      <job name="STATUS_MOTORDREHZAHL">
+        <display name="!JOB#STATUS_MOTORDREHZAHL#STAT_MOTORDREHZAHL_WERT" result="STAT_MOTORDREHZAHL_WERT" format=".0R" grid-type="text" min-value="0" max-value="100" log_tag="RPM" />
+      </job>
+      <job name="STATUS_ADD">
+        <display name="!JOB#STATUS_ADD#STAT_ADD_WERT" result="STAT_ADD_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda Adaption Bank 1 mg/stk" />
+      </job>
+      <job name="STATUS_ADD_2">
+        <display name="!JOB#STATUS_ADD_2#STAT_ADD_2_WERT" result="STAT_ADD_2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda Adaption Bank 2 mg/stk" />
+      </job>
+      <job name="STATUS_MUL">
+        <display name="!JOB#STATUS_MUL#STAT_MUL_WERT" result="STAT_MUL_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Adaption Multi B1" />
+      </job>
+      <job name="STATUS_MUL_2">
+        <display name="!JOB#STATUS_MUL_2#STAT_MUL_2_WERT" result="STAT_MUL_2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Adaption Multi B2" />
+      </job>
+      <job name="INNENTEMP_LESEN">
+        <display name="!JOB#INNENTEMP_LESEN#SG_INNENTEMP_WERT" result="SG_INNENTEMP_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="SG_INNENTEMP_WERT" />
+      </job>
+      <job name="STATUS_AN_LUFTTEMPERATUR">
+        <display name="!JOB#STATUS_AN_LUFTTEMPERATUR#STAT_AN_LUFTTEMPERATUR_WERT" result="STAT_AN_LUFTTEMPERATUR_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Intake Temperature" />
+      </job>
+      <job name="STATUS_DFMONITOR">
+        <display name="!JOB#STATUS_DFMONITOR#STAT_AUSGANG_WERT" result="STAT_AUSGANG_WERT" format="R" grid-type="text" min-value="0" max-value="100" log_tag="Battery Charge %" />
+      </job>
+      <job name="STATUS_DISA">
+        <display name="!JOB#STATUS_DISA#STAT_STAT_DISA_WERT" result="STAT_STAT_DISA_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="DISA %" />
+      </job>
+      <job name="STATUS_DISA2">
+        <display name="!JOB#STATUS_DISA2#STAT_STAT_DISA2_WERT" result="STAT_STAT_DISA2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="DISA 2 %" />
+      </job>
+      <job name="STATUS_E_LUEFTER">
+        <display name="!JOB#STATUS_E_LUEFTER#STAT_STAT_ELUE_WERT" result="STAT_STAT_ELUE_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="E-Fan %" />
+        <display name="!JOB#STATUS_E_LUEFTER#STAT_PHY_TCO_WERT" result="STAT_PHY_TCO_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Coolant Temp" />
+        <display name="!JOB#STATUS_E_LUEFTER#STAT_PHY_TCO_2_WERT" result="STAT_PHY_TCO_2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Coolant Out Temp" />
+      </job>
+      <job name="STATUS_EBL">
+        <display name="!JOB#STATUS_EBL#STAT_STAT_EBL" result="STAT_STAT_EBL" format=".1L" grid-type="text" min-value="0" max-value="100" log_tag="E-Box Fan Status" />
+        <display name="!JOB#STATUS_EBL#STAT_PHY_TECU_WERT" result="STAT_PHY_TECU_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="DME CU Temp" />
+      </job>
+      <job name="STATUS_EISYGD">
+        <display name="!JOB#STATUS_EISYGD#STAT_MRNN_TEST_DK_WERT" result="STAT_MRNN_TEST_DK_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="MAF Adaption" />
+      </job>
+      <job name="STATUS_EKP">
+        <display name="!JOB#STATUS_EKP#STAT_STAT_EKP1_WERT" result="STAT_STAT_EKP1_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Fuel Pump %" />
+      </job>
+      <job name="STATUS_HFMS">
+        <display name="!JOB#STATUS_HFMS#STAT_PHY_HFMS_WERT" result="STAT_PHY_HFMS_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="MAF kg/h" />
+      </job>
+      <job name="STATUS_KFT">
+        <display name="!JOB#STATUS_KFT#STAT_STAT_KFT_WERT" result="STAT_STAT_KFT_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Thermostat %" />
+      </job>
+      <job name="STATUS_KQE">
+        <display name="!JOB#STATUS_KQE#STAT_KM1QB" result="STAT_KM1QB" format=".1L" grid-type="text" min-value="0" max-value="100" log_tag="RON Quality" />
+      </job>
+      <job name="STATUS_L_SONDE">
+        <display name="!JOB#STATUS_L_SONDE#STAT_L_SONDE_WERT" result="STAT_L_SONDE_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda Sensor pre-cat B1 V" />
+        <display name="!JOB#STATUS_L_SONDE#STAT_PHY_LSVK1_WERT" result="STAT_PHY_LSVK1_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda probe pre-cat B1 V" />
+      </job>
+      <job name="STATUS_L_SONDE_2">
+        <display name="!JOB#STATUS_L_SONDE_2#STAT_L_SONDE_2_WERT" result="STAT_L_SONDE_2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda sensor pre-cat B2 V" />
+        <display name="!JOB#STATUS_L_SONDE_2#STAT_PHY_LSVK2_WERT" result="STAT_PHY_LSVK2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda  Sensor pre-cat  B2 V" />
+      </job>
+      <job name="STATUS_L_SONDE_2_H">
+        <display name="!JOB#STATUS_L_SONDE_2_H#STAT_L_SONDE_2_H_WERT" result="STAT_L_SONDE_2_H_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda Sensor  behind-cat B2 V" />
+      </job>
+      <job name="STATUS_L_SONDE_H">
+        <display name="!JOB#STATUS_L_SONDE_H#STAT_L_SONDE_H_WERT" result="STAT_L_SONDE_H_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda Sensor behind-cat B1 V" />
+      </job>
+      <job name="STATUS_LMM_MASSE">
+        <display name="!JOB#STATUS_LMM_MASSE#STAT_LMM_MASSE_WERT" result="STAT_LMM_MASSE_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="MAF out kg/h" />
+      </job>
+      <job name="STATUS_LSH1">
+        <display name="!JOB#STATUS_LSH1#STAT_STAT_LSH1_WERT" result="STAT_STAT_LSH1_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda probe pre-cat B1 heat %" />
+      </job>
+      <job name="STATUS_LSH2">
+        <display name="!JOB#STATUS_LSH2#STAT_STAT_LSH2_WERT" result="STAT_STAT_LSH2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda probe  behind-cat B1 heat %" />
+      </job>
+      <job name="STATUS_LSH3">
+        <display name="!JOB#STATUS_LSH3#STAT_STAT_LSH3_WERT" result="STAT_STAT_LSH3_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda probe before-cat B2 heat %" />
+      </job>
+      <job name="STATUS_LSH4">
+        <display name="!JOB#STATUS_LSH4#STAT_STAT_LSH4_WERT" result="STAT_STAT_LSH4_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Lambda probe  behind-cat B2 heat %" />
+      </job>
+      <job name="STATUS_MOTORLAUFUNRUHE">
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL1_WERT" result="STAT_ZYL1_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="RR1" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL5_WERT" result="STAT_ZYL5_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="RR5" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL3_WERT" result="STAT_ZYL3_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="RR3" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL6_WERT" result="STAT_ZYL6_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="RR6" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL2_WERT" result="STAT_ZYL2_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="RR2" />
+        <display name="!JOB#STATUS_MOTORLAUFUNRUHE#STAT_ZYL4_WERT" result="STAT_ZYL4_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="RR4" />
+      </job>
+      <job name="STATUS_MOTORTEMPERATUR">
+        <display name="!JOB#STATUS_MOTORTEMPERATUR#STAT_MOTORTEMPERATUR_WERT" result="STAT_MOTORTEMPERATUR_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="Motor Temp" />
+      </job>
+      <job name="STATUS_ODR">
+        <display name="!JOB#STATUS_ODR#STAT_PHY_P_OEL_IST_WERT" result="STAT_PHY_P_OEL_IST_WERT" format=".1L" grid-type="text" min-value="0" max-value="100" log_tag="Oil pressure hPa" />
+      </job>
+      <job name="STATUS_OEL">
+        <display name="!JOB#STATUS_OEL#STAT_PHY_TOEL_WERT" result="STAT_PHY_TOEL_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_PHY_TOEL_WERT" />
+        <display name="!JOB#STATUS_OEL#STAT_PHY_NIVOEL_WERT" result="STAT_PHY_NIVOEL_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_PHY_NIVOEL_WERT" />
+        <display name="!JOB#STATUS_OEL#STAT_PHY_QOEL_WERT" result="STAT_PHY_QOEL_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_PHY_QOEL_WERT" />
+      </job>
+      <job name="STATUS_PWG_POTI_SPANNUNG">
+        <display name="!JOB#STATUS_PWG_POTI_SPANNUNG#STAT_STAT_PWG1_WERT" result="STAT_STAT_PWG1_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="PWG Poti %" />
+      </job>
+      <job name="STATUS_UBAT">
+        <display name="!JOB#STATUS_UBAT#STAT_PHY_UBAT_WERT" result="STAT_PHY_UBAT_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="STAT_PHY_UBAT_WERT" />
+      </job>
+      <job name="STATUS_UBATT">
+        <display name="!JOB#STATUS_UBATT#STAT_UBATT_WERT" result="STAT_UBATT_WERT" format=".2R" grid-type="text" min-value="0" max-value="100" log_tag="DME voltage" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

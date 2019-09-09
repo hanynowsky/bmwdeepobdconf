@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="LSZ.log">
+    <strings>
+      <string name="!PAGE_NAME">LSZ</string>
+      <string name="!JOB#STATUS_LESEN#STAT_EINGANG_BLS_EIN">Brake light switch</string>
+    </strings>
+    <jobs sgbd="lsz">
+      <job name="STATUS_LESEN">
+        <display name="!JOB#STATUS_LESEN#STAT_EINGANG_BLS_EIN" result="STAT_EINGANG_BLS_EIN" format=".0R" log_tag="STAT_EINGANG_BLS_EIN" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

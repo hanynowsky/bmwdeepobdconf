@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="MRS4.log">
+    <strings>
+      <string name="!PAGE_NAME">MRS4</string>
+      <string name="!JOB#STATUS_LESEN#STAT_LEHNE_BF_3">STAT_LEHNE_BF_3</string>
+    </strings>
+    <jobs sgbd="mrs4">
+      <job name="STATUS_LESEN">
+        <display name="!JOB#STATUS_LESEN#STAT_LEHNE_BF_3" result="STAT_LEHNE_BF_3" format="R" log_tag="STAT_LEHNE_BF_3" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

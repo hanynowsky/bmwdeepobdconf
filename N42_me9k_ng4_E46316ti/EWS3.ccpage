@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="EWS3.log">
+    <strings>
+      <string name="!PAGE_NAME">EWS3</string>
+      <string name="!JOB#STATUS_LESEN#STAT_ANLASSER_FREIGESCHALTET">STAT_ANLASSER_FREIGESCHALTET</string>
+      <string name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_DREHZAHL">STAT_ANLASSER_AUS_DREHZAHL</string>
+      <string name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_P_N">STAT_ANLASSER_AUS_P_N</string>
+      <string name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_ZV">STAT_ANLASSER_AUS_ZV</string>
+      <string name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_BC">STAT_ANLASSER_AUS_BC</string>
+      <string name="!JOB#STATUS_LESEN#STAT_WEITERE_SELBSTINIT_KEYS">STAT_WEITERE_SELBSTINIT_KEYS</string>
+      <string name="!JOB#STATUS_LESEN#STAT_DME_LEITUNG_FREI">STAT_DME_LEITUNG_FREI</string>
+      <string name="!JOB#STATUS_LESEN#STAT_EWS_JUNGFRAEULICH">STAT_EWS_JUNGFRAEULICH</string>
+      <string name="!JOB#STATUS_LESEN#STAT_P_N_EINGANG">STAT_P_N_EINGANG</string>
+      <string name="!JOB#STATUS_LESEN#STAT_KL_R_EINGANG">STAT_KL_R_EINGANG</string>
+      <string name="!JOB#STATUS_LESEN#STAT_KL_R_EINGANG_KBUS">STAT_KL_R_EINGANG_KBUS</string>
+      <string name="!JOB#STATUS_LESEN#STAT_ZV_GESICHERT">STAT_ZV_GESICHERT</string>
+      <string name="!JOB#STATUS_LESEN#STAT_BC_CODE">STAT_BC_CODE</string>
+      <string name="!JOB#STATUS_LESEN#STAT_KBUS_FREI_OHNE_KEY">STAT_KBUS_FREI_OHNE_KEY</string>
+      <string name="!JOB#STATUS_LESEN#STAT_FREI_KBUS_UND_KEY">STAT_FREI_KBUS_UND_KEY</string>
+      <string name="!JOB#STATUS_LESEN#STAT_MOTORDREHZAHL_KBUS">STAT_MOTORDREHZAHL_KBUS</string>
+      <string name="!JOB#STATUS_LESEN#STAT_AKTUELLE_SCHLUESSELNUMMER">STAT_AKTUELLE_SCHLUESSELNUMMER</string>
+      <string name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_SENDET">STAT_SCHLUESSEL_SENDET</string>
+      <string name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_GESPERRT">STAT_SCHLUESSEL_GESPERRT</string>
+      <string name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_NIO_ID">STAT_SCHLUESSEL_NIO_ID</string>
+      <string name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_NIO_PW">STAT_SCHLUESSEL_NIO_PW</string>
+      <string name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_NIO_WC">STAT_SCHLUESSEL_NIO_WC</string>
+      <string name="!JOB#STATUS_LESEN#STAT_KBUS_NOTWENDIG">STAT_KBUS_NOTWENDIG</string>
+      <string name="!JOB#STATUS_LESEN#STAT_AKTUELLE_SCHLUESSEL_ID_TEXT">STAT_AKTUELLE_SCHLUESSEL_ID_TEXT</string>
+      <string name="!JOB#STATUS_LESEN#STAT_AKTUELLER_WC_TEXT">STAT_AKTUELLER_WC_TEXT</string>
+      <string name="!JOB#STATUS_LESEN#STAT_VORGABE_DME">STAT_VORGABE_DME</string>
+      <string name="!JOB#STATUS_LESEN#STAT_VORGABE_ANLASSERRELAIS">STAT_VORGABE_ANLASSERRELAIS</string>
+      <string name="!JOB#STATUS_LESEN#STAT_VORGABE_DME_AUSFUEHREN">STAT_VORGABE_DME_AUSFUEHREN</string>
+      <string name="!JOB#STATUS_LESEN#STAT_VORGABE_ANLASSERRELAIS_AUSFUEHREN">STAT_VORGABE_ANLASSERRELAIS_AUSFUEHREN</string>
+    </strings>
+    <jobs sgbd="ews3">
+      <job name="STATUS_LESEN">
+        <display name="!JOB#STATUS_LESEN#STAT_ANLASSER_FREIGESCHALTET" result="STAT_ANLASSER_FREIGESCHALTET" format="" log_tag="STAT_ANLASSER_FREIGESCHALTET" />
+        <display name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_DREHZAHL" result="STAT_ANLASSER_AUS_DREHZAHL" format="" log_tag="STAT_ANLASSER_AUS_DREHZAHL" />
+        <display name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_P_N" result="STAT_ANLASSER_AUS_P_N" format="" log_tag="STAT_ANLASSER_AUS_P_N" />
+        <display name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_ZV" result="STAT_ANLASSER_AUS_ZV" format="" log_tag="STAT_ANLASSER_AUS_ZV" />
+        <display name="!JOB#STATUS_LESEN#STAT_ANLASSER_AUS_BC" result="STAT_ANLASSER_AUS_BC" format="" log_tag="STAT_ANLASSER_AUS_BC" />
+        <display name="!JOB#STATUS_LESEN#STAT_WEITERE_SELBSTINIT_KEYS" result="STAT_WEITERE_SELBSTINIT_KEYS" format="" log_tag="STAT_WEITERE_SELBSTINIT_KEYS" />
+        <display name="!JOB#STATUS_LESEN#STAT_DME_LEITUNG_FREI" result="STAT_DME_LEITUNG_FREI" format="" log_tag="STAT_DME_LEITUNG_FREI" />
+        <display name="!JOB#STATUS_LESEN#STAT_EWS_JUNGFRAEULICH" result="STAT_EWS_JUNGFRAEULICH" format="" log_tag="STAT_EWS_JUNGFRAEULICH" />
+        <display name="!JOB#STATUS_LESEN#STAT_P_N_EINGANG" result="STAT_P_N_EINGANG" format="" log_tag="STAT_P_N_EINGANG" />
+        <display name="!JOB#STATUS_LESEN#STAT_KL_R_EINGANG" result="STAT_KL_R_EINGANG" format="" log_tag="STAT_KL_R_EINGANG" />
+        <display name="!JOB#STATUS_LESEN#STAT_KL_R_EINGANG_KBUS" result="STAT_KL_R_EINGANG_KBUS" format="" log_tag="STAT_KL_R_EINGANG_KBUS" />
+        <display name="!JOB#STATUS_LESEN#STAT_ZV_GESICHERT" result="STAT_ZV_GESICHERT" format="" log_tag="STAT_ZV_GESICHERT" />
+        <display name="!JOB#STATUS_LESEN#STAT_BC_CODE" result="STAT_BC_CODE" format="" log_tag="STAT_BC_CODE" />
+        <display name="!JOB#STATUS_LESEN#STAT_KBUS_FREI_OHNE_KEY" result="STAT_KBUS_FREI_OHNE_KEY" format="" log_tag="STAT_KBUS_FREI_OHNE_KEY" />
+        <display name="!JOB#STATUS_LESEN#STAT_FREI_KBUS_UND_KEY" result="STAT_FREI_KBUS_UND_KEY" format="" log_tag="STAT_FREI_KBUS_UND_KEY" />
+        <display name="!JOB#STATUS_LESEN#STAT_MOTORDREHZAHL_KBUS" result="STAT_MOTORDREHZAHL_KBUS" format="" log_tag="STAT_MOTORDREHZAHL_KBUS" />
+        <display name="!JOB#STATUS_LESEN#STAT_AKTUELLE_SCHLUESSELNUMMER" result="STAT_AKTUELLE_SCHLUESSELNUMMER" format="" log_tag="STAT_AKTUELLE_SCHLUESSELNUMMER" />
+        <display name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_SENDET" result="STAT_SCHLUESSEL_SENDET" format="" log_tag="STAT_SCHLUESSEL_SENDET" />
+        <display name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_GESPERRT" result="STAT_SCHLUESSEL_GESPERRT" format="" log_tag="STAT_SCHLUESSEL_GESPERRT" />
+        <display name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_NIO_ID" result="STAT_SCHLUESSEL_NIO_ID" format="" log_tag="STAT_SCHLUESSEL_NIO_ID" />
+        <display name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_NIO_PW" result="STAT_SCHLUESSEL_NIO_PW" format="" log_tag="STAT_SCHLUESSEL_NIO_PW" />
+        <display name="!JOB#STATUS_LESEN#STAT_SCHLUESSEL_NIO_WC" result="STAT_SCHLUESSEL_NIO_WC" format="" log_tag="STAT_SCHLUESSEL_NIO_WC" />
+        <display name="!JOB#STATUS_LESEN#STAT_KBUS_NOTWENDIG" result="STAT_KBUS_NOTWENDIG" format="" log_tag="STAT_KBUS_NOTWENDIG" />
+        <display name="!JOB#STATUS_LESEN#STAT_AKTUELLE_SCHLUESSEL_ID_TEXT" result="STAT_AKTUELLE_SCHLUESSEL_ID_TEXT" format="" log_tag="STAT_AKTUELLE_SCHLUESSEL_ID_TEXT" />
+        <display name="!JOB#STATUS_LESEN#STAT_AKTUELLER_WC_TEXT" result="STAT_AKTUELLER_WC_TEXT" format="" log_tag="STAT_AKTUELLER_WC_TEXT" />
+        <display name="!JOB#STATUS_LESEN#STAT_VORGABE_DME" result="STAT_VORGABE_DME" format="" log_tag="STAT_VORGABE_DME" />
+        <display name="!JOB#STATUS_LESEN#STAT_VORGABE_ANLASSERRELAIS" result="STAT_VORGABE_ANLASSERRELAIS" format="" log_tag="STAT_VORGABE_ANLASSERRELAIS" />
+        <display name="!JOB#STATUS_LESEN#STAT_VORGABE_DME_AUSFUEHREN" result="STAT_VORGABE_DME_AUSFUEHREN" format="" log_tag="STAT_VORGABE_DME_AUSFUEHREN" />
+        <display name="!JOB#STATUS_LESEN#STAT_VORGABE_ANLASSERRELAIS_AUSFUEHREN" result="STAT_VORGABE_ANLASSERRELAIS_AUSFUEHREN" format="" log_tag="STAT_VORGABE_ANLASSERRELAIS_AUSFUEHREN" />
+      </job>
+    </jobs>
+  </page>
+</fragment>

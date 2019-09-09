@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns="http://www.holeschak.de/BmwDeepObd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.holeschak.de/BmwDeepObd BmwDeepObd.xsd">
+  <page name="!PAGE_NAME" display-mode="list" fontsize="small" gauges-portrait="2" gauges-landscape="4" logfile="KOMBI46.log">
+    <strings>
+      <string name="!PAGE_NAME">KOMBI46_Sensors</string>
+      <string name="!JOB#AIF_GWSZ_LESEN#STAT_GWSZ_WERT">Total route Km</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_INSPEKTIONSGRENZE_WERT">Inspection Limit liters</string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEITGRENZE_WERT">Time limit (days) </string>
+      <string name="!JOB#AIF_SIA_DATEN_LESEN#STAT_KRAFTSTOFFMENGE_WERT">Used SI Fuel Liters</string>
+      <string name="!JOB#STATUS_ANALOG_LESEN#STAT_AUSSENTEMP_WERT">External AD temperature</string>
+      <string name="!JOB#STATUS_ANALOG_LESEN#STAT_WEGEINGANG_WERT">ADC Speed</string>
+      <string name="!JOB#STATUS_ANALOG_LESEN#STAT_GESCHWINDIGKEIT_WERT">Speed Km/h</string>
+      <string name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_HEBEL1_WERT">Tank 1 liters</string>
+      <string name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_HEBEL2_WERT">Tank 2 fuel liters</string>
+      <string name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_WERT">Total tank fuel liters</string>
+      <string name="!JOB#STATUS_AUSSENTEMP_LESEN#STAT_AUSSENTEMP_SENSOR_WERT">Outside temperature Celcius</string>
+      <string name="!JOB#STATUS_CAN_MOTORDREHZAHL_LESEN#STAT_MOTORDREHZAHL_WERT">RPM</string>
+      <string name="!JOB#STATUS_CAN_KUEHLMITTELTEMP_LESEN#STAT_KUEHLMITTELTEMP_WERT">Coolant Temperature</string>
+      <string name="!JOB#STATUS_CAN_GETRIEBEINFO_LESEN#STAT_GANG_INFO_WERT">Gear position</string>
+      <string name="!JOB#STATUS_CAN_GETRIEBEINFO_LESEN#STAT_GANG_WHL_ANZ_WERT">Gear selector position</string>
+      <string name="!JOB#STATUS_CAN_EINSPRITZMENGE_LESEN#STAT_EINSPRITZMENGE_WERT">Injection volume</string>
+      <string name="!JOB#STATUS_CAN_SIGNALE_LESEN#STAT_UMGEBUNGSTEMPERATUR_WERT">External Temperature</string>
+      <string name="!JOB#STATUS_CAN_SIGNALE_LESEN#STAT_KILOMETERSTAND_WERT">Total Trip Kilometers</string>
+      <string name="!JOB#STATUS_TOENS_SG#STAT_OELKALT_EIN">Cold oil</string>
+      <string name="!JOB#STATUS_TOENS_SG#STAT_OELWARM_EIN">Warm oil</string>
+      <string name="!JOB#STATUS_TOENS_SG#STAT_DREHZAHL_MITTEL_WERT">Average engine speed</string>
+      <string name="!JOB#STATUS_TOENS_SG#STAT_TOG_NIVEAU_MITTEL_WERT">LTOL mm</string>
+      <string name="!JOB#STATUS_SIA_FINISH#STAT_LITER_WERT">Consumed Fuel</string>
+    </strings>
+    <jobs sgbd="kombi46">
+      <job name="AIF_GWSZ_LESEN">
+        <display name="!JOB#AIF_GWSZ_LESEN#STAT_GWSZ_WERT" result="STAT_GWSZ_WERT" format=".2L" log_tag="STAT_GWSZ_WERT" />
+      </job>
+      <job name="AIF_SIA_DATEN_LESEN">
+        <display name="!JOB#AIF_SIA_DATEN_LESEN#STAT_INSPEKTIONSGRENZE_WERT" result="STAT_INSPEKTIONSGRENZE_WERT" format=".2R" log_tag="STAT_INSPEKTIONSGRENZE_WERT" />
+        <display name="!JOB#AIF_SIA_DATEN_LESEN#STAT_ZEITGRENZE_WERT" result="STAT_ZEITGRENZE_WERT" format=".0R" log_tag="STAT_ZEITGRENZE_WERT" />
+        <display name="!JOB#AIF_SIA_DATEN_LESEN#STAT_KRAFTSTOFFMENGE_WERT" result="STAT_KRAFTSTOFFMENGE_WERT" format=".2R" log_tag="STAT_KRAFTSTOFFMENGE_WERT" />
+      </job>
+      <job name="STATUS_ANALOG_LESEN">
+        <display name="!JOB#STATUS_ANALOG_LESEN#STAT_AUSSENTEMP_WERT" result="STAT_AUSSENTEMP_WERT" format=".2R" log_tag="STAT_AUSSENTEMP_WERT" />
+        <display name="!JOB#STATUS_ANALOG_LESEN#STAT_WEGEINGANG_WERT" result="STAT_WEGEINGANG_WERT" format=".2L" log_tag="STAT_WEGEINGANG_WERT" />
+        <display name="!JOB#STATUS_ANALOG_LESEN#STAT_GESCHWINDIGKEIT_WERT" result="STAT_GESCHWINDIGKEIT_WERT" format="L" log_tag="STAT_GESCHWINDIGKEIT_WERT" />
+      </job>
+      <job name="STATUS_TANKINHALT_LESEN">
+        <display name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_HEBEL1_WERT" result="STAT_TANKINHALT_HEBEL1_WERT" format=".2R" log_tag="STAT_TANKINHALT_HEBEL1_WERT" />
+        <display name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_HEBEL2_WERT" result="STAT_TANKINHALT_HEBEL2_WERT" format=".2R" log_tag="STAT_TANKINHALT_HEBEL2_WERT" />
+        <display name="!JOB#STATUS_TANKINHALT_LESEN#STAT_TANKINHALT_WERT" result="STAT_TANKINHALT_WERT" format=".2R" log_tag="STAT_TANKINHALT_WERT" />
+      </job>
+      <job name="STATUS_AUSSENTEMP_LESEN">
+        <display name="!JOB#STATUS_AUSSENTEMP_LESEN#STAT_AUSSENTEMP_SENSOR_WERT" result="STAT_AUSSENTEMP_SENSOR_WERT" format=".2R" log_tag="STAT_AUSSENTEMP_SENSOR_WERT" />
+      </job>
+      <job name="STATUS_CAN_MOTORDREHZAHL_LESEN">
+        <display name="!JOB#STATUS_CAN_MOTORDREHZAHL_LESEN#STAT_MOTORDREHZAHL_WERT" result="STAT_MOTORDREHZAHL_WERT" format=".2L" log_tag="STAT_MOTORDREHZAHL_WERT" />
+      </job>
+      <job name="STATUS_CAN_KUEHLMITTELTEMP_LESEN">
+        <display name="!JOB#STATUS_CAN_KUEHLMITTELTEMP_LESEN#STAT_KUEHLMITTELTEMP_WERT" result="STAT_KUEHLMITTELTEMP_WERT" format=".2L" log_tag="STAT_KUEHLMITTELTEMP_WERT" />
+      </job>
+      <job name="STATUS_CAN_GETRIEBEINFO_LESEN">
+        <display name="!JOB#STATUS_CAN_GETRIEBEINFO_LESEN#STAT_GANG_INFO_WERT" result="STAT_GANG_INFO_WERT" format=".0R" log_tag="STAT_GANG_INFO_WERT" />
+        <display name="!JOB#STATUS_CAN_GETRIEBEINFO_LESEN#STAT_GANG_WHL_ANZ_WERT" result="STAT_GANG_WHL_ANZ_WERT" format=".0R" log_tag="STAT_GANG_WHL_ANZ_WERT" />
+      </job>
+      <job name="STATUS_CAN_EINSPRITZMENGE_LESEN">
+        <display name="!JOB#STATUS_CAN_EINSPRITZMENGE_LESEN#STAT_EINSPRITZMENGE_WERT" result="STAT_EINSPRITZMENGE_WERT" format=".2L" log_tag="STAT_EINSPRITZMENGE_WERT" />
+      </job>
+      <job name="STATUS_CAN_SIGNALE_LESEN">
+        <display name="!JOB#STATUS_CAN_SIGNALE_LESEN#STAT_UMGEBUNGSTEMPERATUR_WERT" result="STAT_UMGEBUNGSTEMPERATUR_WERT" format=".2R" log_tag="STAT_UMGEBUNGSTEMPERATUR_WERT" />
+        <display name="!JOB#STATUS_CAN_SIGNALE_LESEN#STAT_KILOMETERSTAND_WERT" result="STAT_KILOMETERSTAND_WERT" format=".2L" log_tag="STAT_KILOMETERSTAND_WERT" />
+      </job>
+      <job name="STATUS_TOENS_SG">
+        <display name="!JOB#STATUS_TOENS_SG#STAT_OELKALT_EIN" result="STAT_OELKALT_EIN" format=".0R" log_tag="STAT_OELKALT_EIN" />
+        <display name="!JOB#STATUS_TOENS_SG#STAT_OELWARM_EIN" result="STAT_OELWARM_EIN" format=".0R" log_tag="STAT_OELWARM_EIN" />
+        <display name="!JOB#STATUS_TOENS_SG#STAT_DREHZAHL_MITTEL_WERT" result="STAT_DREHZAHL_MITTEL_WERT" format=".2R" log_tag="STAT_DREHZAHL_MITTEL_WERT" />
+        <display name="!JOB#STATUS_TOENS_SG#STAT_TOG_NIVEAU_MITTEL_WERT" result="STAT_TOG_NIVEAU_MITTEL_WERT" format=".0R" log_tag="STAT_TOG_NIVEAU_MITTEL_WERT" />
+      </job>
+      <job name="STATUS_SIA_FINISH">
+        <display name="!JOB#STATUS_SIA_FINISH#STAT_LITER_WERT" result="STAT_LITER_WERT" format=".0R" log_tag="STAT_LITER_WERT" />
+      </job>
+    </jobs>
+  </page>
+</fragment>
